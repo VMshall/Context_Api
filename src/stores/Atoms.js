@@ -1,7 +1,23 @@
 import {atom} from "recoil"
 
-export const countAtom = atom({
+export const networkAtom = atom({
+    key: "networkAtom",
+    default: "100"
 
-    default: 0,
-    key: "count"
-})
+});
+
+export const jobsAtom = atom({
+    key: "jobsAtom",
+    default: "0"
+});
+
+
+export const notificationAtom = atom({
+    key: "notificationAtom",
+    default: "12"
+});
+
+export const messageAtom = atom ({
+    key: "messageAtom",
+    default: "0"
+});
